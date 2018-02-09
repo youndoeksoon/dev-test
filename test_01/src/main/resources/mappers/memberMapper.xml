@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test.mapper.memberMapper">
+
+	<!-- mybatis-config.xml의 typealias에 등록하지 않으면
+		
+		<select id="selectMember" resultType="com.test.vo.MemberVO">
+			SELECT ID, PW, NAME FROM TEST
+		</select>
+		
+		직접 페키지 경로를 입력
+	 -->
+	 
+	 <!-- id는 DAO에서 호출하기위함, resultType은 정보를 담기위한 VO -->
+	 <select id="selectMember" resultType="memberVO">
+	 	SELECT * FROM TEST.test
+	 </select>
+   
+</mapper>
