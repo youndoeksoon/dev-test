@@ -40,6 +40,8 @@ public class HomeController {
 		
 		System.out.println("main_dev_file");
 		
+		System.out.println("branch_test_2");
+		
 		return "home";
 	}
 	
