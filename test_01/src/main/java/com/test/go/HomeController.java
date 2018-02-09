@@ -38,7 +38,7 @@ public class HomeController {
 		
 		model.addAttribute("memberList", memberList);
 		
-		System.out.println("work on");
+		System.out.println("main_dev_file");
 		
 		return "home";
 	}
